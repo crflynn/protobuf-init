@@ -20,4 +20,4 @@ python -m grpc_tools.protoc \
 
 The `--init_python_out=$GEN_PATH` flag indicates to call the plugin to create the init files.
 
-The `--init_python_opt=imports=protobuf+grpcio+grpclib` indicates which relative imports to include in the init files. Allowed options are `protobuf`, `grpcio`, `grpclib`, separated by `+`.
+The `--init_python_opt=imports=protobuf+grpcio+grpclib` indicates which relative imports to include in the init files. Allowed options are `protobuf`, `grpcio`, `grpclib`, separated by `+`. (Note that both grpcio and grpclib generate `<ServiceName>Stub` objects which would collide in the init file.)
