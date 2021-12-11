@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package example.mod.v1;
+
+message DummyMessage {
+  int32 one = 1;
+  int64 thing = 2;
+  uint32 something = 3;
+  uint64 else = 4;
+}
+
+enum SomeEnum {
+  UNKNOWN = 0;
+  ONE = 1;
+  TWO = 2;
+}
+
+service DummyService {
+  rpc Dummy(DummyMessage) returns (DummyMessage);
+}
