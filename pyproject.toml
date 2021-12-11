@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "protobuf-init"
+version = "0.1.0"
+description = ""
+authors = ["flynn <crf204@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+protobuf = "^3.19.1"
+
+[tool.poetry.dev-dependencies]
+mypy-protobuf = "^3.0.0"
+mypy = "^0.910"
+black = "^21.12b0"
+isort = "^5.10.1"
+grpcio = "^1.42.0"
+grpcio-tools = "^1.42.0"
+grpclib = "^0.4.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+protoc-gen-python_init = "protobuf_init.plugin:main"
+
+[tool.black]
+line-length = 88
+target-version = ['py37']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs
+    | \.circleci
+    | \.git
+    | \.github
+    | \.hg
+    | \.mypy_cache
+    | \.pytest_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
+
+[tool.isort]
+force_single_line = true
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 88
+known_standard_library = ["setuptools"]
