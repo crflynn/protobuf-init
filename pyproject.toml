@@ -3,6 +3,22 @@ name = "protobuf-init"
 version = "0.1.0"
 description = "generate __init__.py files for protobuf projects"
 authors = ["flynn <crf204@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/crflynn/protobuf-init"
+repository = "https://github.com/crflynn/protobuf-init"
+documentation = "https://github.com/crflynn/protobuf-init"
+include = [
+    { path="LICENSE.txt", format="sdist" },
+    { path="README.md", format="sdist" },
+]
+keywords = ["protobuf", "protocol", "buffers", "protoc", "plugin"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
