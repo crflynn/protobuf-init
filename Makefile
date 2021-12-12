@@ -31,3 +31,11 @@ clean:
 fmt:
 	poetry run isort .
 	poetry run black .
+
+publish:
+	rm -rf dist
+	poetry build
+	poetry publish
+
+release:
+	ghr -u crflynn -r protobuf-init -c $(shell git rev-parse HEAD) -delete -b "release" -n $(shell poetry version -s) $(shell poetry version -s) dist/*.tar.gz
