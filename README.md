@@ -1,5 +1,11 @@
 # protobuf-init
 
+To install:
+
+```bash
+pip install protobuf-init
+```
+
 This package will create `__init__.py` files when compiling `*.proto` files. Optionally, it will create relative imports from generated `*_pb.py`, `*_pb_grpc.py`, and `*_grpc.py` files from `protobuf`, `grpcio`, and `grpclib` packages, respectively.
 
 Using the `protos` folder of this project as an example, the following command will generate the contents of the `example` package, also in this project (assuming `grpcio-tools` is installed):
