@@ -38,4 +38,6 @@ publish:
 	poetry publish
 
 release:
+	rm -rf dist
+	poetry build
 	ghr -u crflynn -r protobuf-init -c $(shell git rev-parse HEAD) -delete -b "release" -n $(shell poetry version -s) $(shell poetry version -s) dist/*.tar.gz
