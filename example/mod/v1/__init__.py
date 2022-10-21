@@ -11,3 +11,4 @@ from .example_pb2 import DecimalMessage
 from .example_pb2 import ExampleMessage
 from .example_pb2 import NestedMessage
 from .example_pb2 import SimpleMessage
+from .hyphen_ated_pb2 import ExtraMessage
