@@ -18,7 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
     syntax="proto3",
     serialized_options=None,
     create_key=_descriptor._internal_create_key,
-    serialized_pb=b'\n\x1c\x65xample/mod/v1/example.proto\x12\x0e\x65xample.mod.v1"@\n\rSimpleMessage\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x10\n\x08quantity\x18\x02 \x01(\x03\x12\x0f\n\x07measure\x18\x03 \x01(\x02"+\n\rNestedMessage\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t"\x1f\n\x0e\x44\x65\x63imalMessage\x12\r\n\x05value\x18\x01 \x01(\t"\xf9\x04\n\x0e\x45xampleMessage\x12\r\n\x05int32\x18\x01 \x01(\x05\x12\r\n\x05int64\x18\x02 \x01(\x03\x12\x0e\n\x06uint32\x18\x03 \x01(\r\x12\x0e\n\x06uint64\x18\x04 \x01(\x04\x12\x0e\n\x06\x64ouble\x18\x05 \x01(\x01\x12\r\n\x05\x66loat\x18\x06 \x01(\x02\x12\x0c\n\x04\x62ool\x18\x07 \x01(\x08\x12\x35\n\x04\x65num\x18\x08 \x01(\x0e\x32\'.example.mod.v1.ExampleMessage.SomeEnum\x12\x10\n\x08property\x18\t \x01(\t\x12-\n\x06nested\x18\n \x01(\x0b\x32\x1d.example.mod.v1.NestedMessage\x12\x12\n\nstringlist\x18\x0b \x03(\t\x12\r\n\x05\x62ytes\x18\x0c \x01(\x0c\x12\x10\n\x08sfixed32\x18\r \x01(\x0f\x12\x10\n\x08sfixed64\x18\x0e \x01(\x10\x12\x0e\n\x06sint32\x18\x0f \x01(\x11\x12\x0e\n\x06sint64\x18\x10 \x01(\x12\x12\x0f\n\x07\x66ixed32\x18\x11 \x01(\x07\x12\x0f\n\x07\x66ixed64\x18\x12 \x01(\x06\x12\x15\n\x0boneofstring\x18\x13 \x01(\tH\x00\x12\x14\n\noneofint32\x18\x14 \x01(\x05H\x00\x12\x34\n\x03map\x18\x15 \x03(\x0b\x32\'.example.mod.v1.ExampleMessage.MapEntry\x12/\n\x07\x64\x65\x63imal\x18\x18 \x01(\x0b\x32\x1e.example.mod.v1.DecimalMessage\x1a*\n\x08MapEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01"2\n\x08SomeEnum\x12\x0f\n\x0bunspecified\x10\x00\x12\t\n\x05\x66irst\x10\x01\x12\n\n\x06second\x10\x02\x42\x07\n\x05oneofb\x06proto3',
+    serialized_pb=b'\n\x1c\x65xample/mod/v1/example.proto\x12\x0e\x65xample.mod.v1"@\n\rSimpleMessage\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x10\n\x08quantity\x18\x02 \x01(\x03\x12\x0f\n\x07measure\x18\x03 \x01(\x02"+\n\rNestedMessage\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t"\x1f\n\x0e\x44\x65\x63imalMessage\x12\r\n\x05value\x18\x01 \x01(\t"\x9d\x05\n\x0e\x45xampleMessage\x12\r\n\x05int32\x18\x01 \x01(\x05\x12\r\n\x05int64\x18\x02 \x01(\x03\x12\x0e\n\x06uint32\x18\x03 \x01(\r\x12\x0e\n\x06uint64\x18\x04 \x01(\x04\x12\x0e\n\x06\x64ouble\x18\x05 \x01(\x01\x12\r\n\x05\x66loat\x18\x06 \x01(\x02\x12\x0c\n\x04\x62ool\x18\x07 \x01(\x08\x12\x35\n\x04\x65num\x18\x08 \x01(\x0e\x32\'.example.mod.v1.ExampleMessage.SomeEnum\x12\x10\n\x08property\x18\t \x01(\t\x12-\n\x06nested\x18\n \x01(\x0b\x32\x1d.example.mod.v1.NestedMessage\x12\x12\n\nstringlist\x18\x0b \x03(\t\x12\r\n\x05\x62ytes\x18\x0c \x01(\x0c\x12\x10\n\x08sfixed32\x18\r \x01(\x0f\x12\x10\n\x08sfixed64\x18\x0e \x01(\x10\x12\x0e\n\x06sint32\x18\x0f \x01(\x11\x12\x0e\n\x06sint64\x18\x10 \x01(\x12\x12\x0f\n\x07\x66ixed32\x18\x11 \x01(\x07\x12\x0f\n\x07\x66ixed64\x18\x12 \x01(\x06\x12\x15\n\x0boneofstring\x18\x13 \x01(\tH\x00\x12\x14\n\noneofint32\x18\x14 \x01(\x05H\x00\x12\x34\n\x03map\x18\x15 \x03(\x0b\x32\'.example.mod.v1.ExampleMessage.MapEntry\x12/\n\x07\x64\x65\x63imal\x18\x18 \x01(\x0b\x32\x1e.example.mod.v1.DecimalMessage\x12\x15\n\x08optional\x18\x19 \x01(\tH\x01\x88\x01\x01\x1a*\n\x08MapEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01"2\n\x08SomeEnum\x12\x0f\n\x0bunspecified\x10\x00\x12\t\n\x05\x66irst\x10\x01\x12\n\n\x06second\x10\x02\x42\x07\n\x05oneofB\x0b\n\t_optionalb\x06proto3',
 )
 
 
@@ -56,8 +56,8 @@ _EXAMPLEMESSAGE_SOMEENUM = _descriptor.EnumDescriptor(
     ],
     containing_type=None,
     serialized_options=None,
-    serialized_start=767,
-    serialized_end=817,
+    serialized_start=790,
+    serialized_end=840,
 )
 _sym_db.RegisterEnumDescriptor(_EXAMPLEMESSAGE_SOMEENUM)
 
@@ -297,8 +297,8 @@ _EXAMPLEMESSAGE_MAPENTRY = _descriptor.Descriptor(
     syntax="proto3",
     extension_ranges=[],
     oneofs=[],
-    serialized_start=723,
-    serialized_end=765,
+    serialized_start=746,
+    serialized_end=788,
 )
 
 _EXAMPLEMESSAGE = _descriptor.Descriptor(
@@ -727,6 +727,25 @@ _EXAMPLEMESSAGE = _descriptor.Descriptor(
             file=DESCRIPTOR,
             create_key=_descriptor._internal_create_key,
         ),
+        _descriptor.FieldDescriptor(
+            name="optional",
+            full_name="example.mod.v1.ExampleMessage.optional",
+            index=22,
+            number=25,
+            type=9,
+            cpp_type=9,
+            label=1,
+            has_default_value=False,
+            default_value=b"".decode("utf-8"),
+            message_type=None,
+            enum_type=None,
+            containing_type=None,
+            is_extension=False,
+            extension_scope=None,
+            serialized_options=None,
+            file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
+        ),
     ],
     extensions=[],
     nested_types=[
@@ -748,9 +767,17 @@ _EXAMPLEMESSAGE = _descriptor.Descriptor(
             create_key=_descriptor._internal_create_key,
             fields=[],
         ),
+        _descriptor.OneofDescriptor(
+            name="_optional",
+            full_name="example.mod.v1.ExampleMessage._optional",
+            index=1,
+            containing_type=None,
+            create_key=_descriptor._internal_create_key,
+            fields=[],
+        ),
     ],
     serialized_start=193,
-    serialized_end=826,
+    serialized_end=862,
 )
 
 _EXAMPLEMESSAGE_MAPENTRY.containing_type = _EXAMPLEMESSAGE
@@ -771,6 +798,12 @@ _EXAMPLEMESSAGE.oneofs_by_name["oneof"].fields.append(
 _EXAMPLEMESSAGE.fields_by_name[
     "oneofint32"
 ].containing_oneof = _EXAMPLEMESSAGE.oneofs_by_name["oneof"]
+_EXAMPLEMESSAGE.oneofs_by_name["_optional"].fields.append(
+    _EXAMPLEMESSAGE.fields_by_name["optional"]
+)
+_EXAMPLEMESSAGE.fields_by_name[
+    "optional"
+].containing_oneof = _EXAMPLEMESSAGE.oneofs_by_name["_optional"]
 DESCRIPTOR.message_types_by_name["SimpleMessage"] = _SIMPLEMESSAGE
 DESCRIPTOR.message_types_by_name["NestedMessage"] = _NESTEDMESSAGE
 DESCRIPTOR.message_types_by_name["DecimalMessage"] = _DECIMALMESSAGE

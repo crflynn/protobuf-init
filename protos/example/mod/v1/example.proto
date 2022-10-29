@@ -13,9 +13,7 @@ message NestedMessage {
   string value = 2;
 }
 
-message DecimalMessage {
-  string value = 1;
-}
+message DecimalMessage { string value = 1; }
 
 message ExampleMessage {
   int32 int32 = 1;
@@ -47,4 +45,5 @@ message ExampleMessage {
   }
   map<string, string> map = 21;
   DecimalMessage decimal = 24;
+  optional string optional = 25;
 }
