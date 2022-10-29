@@ -13,7 +13,9 @@ message NestedMessage {
   string value = 2;
 }
 
-message DecimalMessage { string value = 1; }
+message DecimalMessage {
+  string value = 1;
+}
 
 message ExampleMessage {
   int32 int32 = 1;
