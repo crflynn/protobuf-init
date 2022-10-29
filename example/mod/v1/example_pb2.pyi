@@ -124,6 +124,7 @@ class ExampleMessage(google.protobuf.message.Message):
     ONEOFINT32_FIELD_NUMBER: builtins.int
     MAP_FIELD_NUMBER: builtins.int
     DECIMAL_FIELD_NUMBER: builtins.int
+    OPTIONAL_FIELD_NUMBER: builtins.int
     int32: builtins.int = ...
     int64: builtins.int = ...
     uint32: builtins.int = ...
@@ -156,6 +157,7 @@ class ExampleMessage(google.protobuf.message.Message):
     ) -> google.protobuf.internal.containers.ScalarMap[typing.Text, typing.Text]: ...
     @property
     def decimal(self) -> global___DecimalMessage: ...
+    optional: typing.Text = ...
     def __init__(
         self,
         *,
@@ -181,10 +183,13 @@ class ExampleMessage(google.protobuf.message.Message):
         oneofint32: builtins.int = ...,
         map: typing.Optional[typing.Mapping[typing.Text, typing.Text]] = ...,
         decimal: typing.Optional[global___DecimalMessage] = ...,
+        optional: typing.Text = ...,
     ) -> None: ...
     def HasField(
         self,
         field_name: typing_extensions.Literal[
+            "_optional",
+            b"_optional",
             "decimal",
             b"decimal",
             "nested",
@@ -195,11 +200,15 @@ class ExampleMessage(google.protobuf.message.Message):
             b"oneofint32",
             "oneofstring",
             b"oneofstring",
+            "optional",
+            b"optional",
         ],
     ) -> builtins.bool: ...
     def ClearField(
         self,
         field_name: typing_extensions.Literal[
+            "_optional",
+            b"_optional",
             "bool",
             b"bool",
             "bytes",
@@ -230,6 +239,8 @@ class ExampleMessage(google.protobuf.message.Message):
             b"oneofint32",
             "oneofstring",
             b"oneofstring",
+            "optional",
+            b"optional",
             "property",
             b"property",
             "sfixed32",
@@ -248,6 +259,11 @@ class ExampleMessage(google.protobuf.message.Message):
             b"uint64",
         ],
     ) -> None: ...
+    @typing.overload
+    def WhichOneof(
+        self, oneof_group: typing_extensions.Literal["_optional", b"_optional"]
+    ) -> typing.Optional[typing_extensions.Literal["optional"]]: ...
+    @typing.overload
     def WhichOneof(
         self, oneof_group: typing_extensions.Literal["oneof", b"oneof"]
     ) -> typing.Optional[typing_extensions.Literal["oneofstring", "oneofint32"]]: ...

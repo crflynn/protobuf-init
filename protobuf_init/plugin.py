@@ -118,6 +118,7 @@ def main() -> None:
     value = sys.stdin.buffer.read()
     request = plugin.CodeGeneratorRequest.FromString(value)
     response = plugin.CodeGeneratorResponse()
+    response.supported_features = response.FEATURE_PROTO3_OPTIONAL
     process(request, response)
     sys.stdout.buffer.write(response.SerializeToString())
 
