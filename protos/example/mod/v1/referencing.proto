@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "example/mod/v1/another.proto";
+
+package example.mod.v1;
+
+message ReferencingMessage {
+  google.protobuf.Timestamp ts = 1;
+  example.mod.v1.DummyMessage dummy = 2;
+}

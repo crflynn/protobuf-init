@@ -68,6 +68,9 @@ def process(
     assets = defaultdict(lambda: defaultdict(list))
     for proto_file in request.proto_file:
         filename = proto_file.name
+        # ignore files which aren't requested
+        if filename not in request.file_to_generate:
+            continue
         objects = [field.name for field in proto_file.message_type]
         objects += [field.name for field in proto_file.enum_type]
         services = [field.name for field in proto_file.service]
